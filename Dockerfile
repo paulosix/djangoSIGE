@@ -2,7 +2,7 @@ FROM alpine:3.13.5
 MAINTAINER paulosix@hotmail.com
 RUN mkdir -p /opt/djangoSIGE/
 WORKDIR /opt/djangoSIGE/
-COPY requirements.txt /opt/djangoSIGE/
+COPY . /opt/djangoSIGE/
 RUN apk update
 RUN apk add --no-cache python3 python3-dev \
     py3-cffi zlib-dev gcc jpeg-dev \
