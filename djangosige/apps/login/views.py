@@ -130,13 +130,13 @@ class ForgotPasswordView(FormView):
                         c = {
                             'email': associated_user.email,
                             'domain': request.META['HTTP_HOST'],
-                            'site_name': 'djangoSIGE',
+                            'site_name': 'SIGE',
                             'uid': urlsafe_base64_encode(force_bytes(associated_user.pk)).decode(encoding="utf-8"),
                             'user': associated_user,
                             'token': default_token_generator.make_token(associated_user),
                             'protocol': 'http://',
                         }
-                        subject = u"Redefinir sua senha - DjangoSIGE"
+                        subject = u"Redefinir sua senha - SIGE"
                         email_template_name = 'login/trocar_senha_email.html'
                         email_mensagem = loader.render_to_string(
                             email_template_name, c)
