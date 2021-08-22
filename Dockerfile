@@ -1,4 +1,4 @@
-FROM alpine:3.13.5
+FROM alpine:latest
 MAINTAINER paulosix@hotmail.com
 RUN mkdir -p /opt/djangoSIGE/
 WORKDIR /opt/djangoSIGE/
