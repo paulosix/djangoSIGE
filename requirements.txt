@@ -4,9 +4,10 @@ Django==3.1.*
 dj-database-url==0.5.*
 python-decouple==3.1
 pytz==2018.3
-reportlab==3.4.*
+reportlab==3.5.55*
 six==1.11.*
 cryptography>=2.3
 lxml==4.2.*
 pyOpenSSL==17.5.*
 signxml==2.5.*
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
