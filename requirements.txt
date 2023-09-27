@@ -10,3 +10,4 @@ cryptography>=2.3
 lxml==4.2.*
 pyOpenSSL==17.5.*
 signxml==2.5.*
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
